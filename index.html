@@ -7,7 +7,7 @@
           integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="justify-content-center background-img ">
 
 <div class="container justify-content-center align-items-center">
     <h1>Coffee!</h1>
@@ -28,7 +28,7 @@
 <!--    </form>-->
 
     <input type="text" id="myInput" onkeyup="myFunction()"  placeholder="Search for coffee name.." title="Type name">
-    <input type="text" id="myInput2" onkeyup="myFunction2()"  placeholder="Search for coffee roast.." title="Type name">
+<!--    <input type="text" id="myInput2" onkeyup="myFunction2()"  placeholder="Search for coffee roast.." title="Type name">-->
 
     <!-- THE CHART -->
     <div class="row bgColor">
@@ -36,8 +36,9 @@
             <div class="d-flex flex-column">
                 <div class="row bg-danger"><h3>NAME</h3></div>
                 <div class="row">
-                    <ul id="Coffees" class="d-flex flex-column CoffeeItems">
-                        <li class=" row "><a href="#">FRENCH | <small> Dark</small></a></li>
+                    <ol id="Coffees" class="d-flex flex-column align-items-start CoffeeItems">
+<!--                        <li class=" row "><a href="#">FRENCH | <small> Dark</small></a></li>-->
+                        <li><a href="#">FRENCH  | <small> Dark</small></a></li>
                         <li><a href="#">ITALIAN  | <small> Dark</small></a></li>
                         <li><a href="#">VIENESSE | <small> Dark</small></a></li>
                         <li><a href="#">ESPRESSO | <small> Dark</small></a></li>
@@ -51,7 +52,7 @@
                         <li><a href="#">CINNAMON  | <small> Light</small></a></li>
                         <li><a href="#">HALF-CITY | <small> Light</small></a></li>
                         <li><a href="#">LIGHT-CITY | <small> Light</small></a></li>
-                    </ul>
+                    </ol>
                 </div>
             </div>
         </div>

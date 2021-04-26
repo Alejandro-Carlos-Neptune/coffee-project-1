@@ -1,14 +1,26 @@
-li{
-    list-style: none;
+
+body {
+    background-image: url("img/pexels-pixabay-531754.jpg");
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+.CoffeeItems {
+    padding-left: 2em;
+    padding-bottom: 0;
+    padding-top: 0;
+}
+.IDitems {
+    padding: 0;
 }
 
-.IDitems {
-    padding:0;
-}.RoastItems {
-    padding:0;
- }
+.RoastItems {
+    padding: 0;
+}
 
 
- .bgColor {
-     background-color: bisque;
- }
+.bgColor {
+    background-color: bisque;
+}
