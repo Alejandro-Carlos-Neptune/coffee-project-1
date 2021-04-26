@@ -8,28 +8,89 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<h1>Coffee!</h1>
 
-<form>
-    <label for="roast-selection"></label>
-    <select id="roast-selection">
-        <option>light</option>
-        <option>medium</option>
-        <option>dark</option>
-    </select>
-    <input id="submit" type="submit"/>
-</form>
+<div class="container justify-content-center align-items-center">
+    <h1>Coffee!</h1>
+    <form id="Coffee-Search">
+        <label for="SearchCoffee">Coffee Name</label>
+        <input type="text" name="SearchCoffee" id="SearchCoffee" placeholder="Search Coffee">
+        <button id='search-button' type="submit">Search</button>
+    </form>
 
-<table>
-    <thead>
-    <tr>
-        <th>ID</th>
-        <th>NAME</th>
-        <th>ROAST</th>
-    </tr>
-    </thead>
-    <tbody id="coffees"></tbody>
-</table>
+    <form>
+        <label for="roast-selection"></label>
+        <select id="roast-selection">
+            <option>light</option>
+            <option>medium</option>
+            <option>dark</option>
+        </select>
+        <input id="submit" type="submit"/>
+    </form>
+    <!-- THE CHART -->
+    <div class="row bg-success">
+        <div class="col-4 bg-warning">
+            <div class="d-flex flex-column">
+                <div class="row bg-info"><h3>ID</h3></div>
+                <div class="row bg-info">1</div>
+                <div class="row bg-info">2</div>
+                <div class="row bg-info">3</div>
+                <div class="row bg-info">4</div>
+                <div class="row bg-info">5</div>
+                <div class="row bg-info">6</div>
+                <div class="row bg-info">7</div>
+                <div class="row bg-info">8</div>
+                <div class="row bg-info">9</div>
+                <div class="row bg-info">10</div>
+                <div class="row bg-info">11</div>
+                <div class="row bg-info">12</div>
+                <div class="row bg-info">13</div>
+                <div class="row bg-info">14</div>
+            </div>
+        </div>
+
+        <div class="col-4">
+            <div class="d-flex flex-column">
+                <div class="row dark" ><h3>NAME</h3></div>
+                <div class="row"><p class="dark">FRENCH</p></div>
+                <div class="row dark" >ITALIAN</div>
+                <div class="row dark" >VIENNESE</div>
+                <div class="row dark" >ESPRESSO</div>
+                <div class="row dark" >EUROPEAN</div>
+                <div class="row dark" >NEW ORLEANS</div>
+                <div class="row dark" >CONTINENTAL</div>
+                <div class="row dark" >HIGH</div>
+                <div class="row medium" >BREAKFAST</div>
+                <div class="row medium" >AMERICAN</div>
+                <div class="row medium" >CITY</div>
+                <div class="row light" >CINNAMON</div>
+                <div class="row light" >HALF CITY</div>
+                <div class="row light" >LIGHT CITY</div>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="d-flex flex-column">
+                <div class="row bg-warning"><h3>ROAST</h3></div>
+                <div class="row bg-warning">DARK</div>
+                <div class="row bg-warning">DARK</div>
+                <div class="row bg-warning">DARK</div>
+                <div class="row bg-warning">DARK</div>
+                <div class="row bg-warning">DARK</div>
+                <div class="row bg-warning">DARK</div>
+                <div class="row bg-warning">DARK</div>
+                <div class="row bg-warning">DARK</div>
+                <div class="row bg-warning">MEDIUM</div>
+                <div class="row bg-warning">MEDIUM</div>
+                <div class="row bg-warning">MEDIUM</div>
+                <div class="row bg-warning">LIGHT</div>
+                <div class="row bg-warning">LIGHT</div>
+                <div class="row bg-warning">LIGHT</div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
 
 <script src="main.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"
