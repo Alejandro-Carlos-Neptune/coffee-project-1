@@ -1,9 +1,14 @@
-table {
-    border-collapse: collapse;
-    margin: 15px 0;
+li{
+    list-style: none;
 }
 
-td, th {
-    border: 1px solid black;
-    padding: 5px 10px;
-}
+.IDitems {
+    padding:0;
+}.RoastItems {
+    padding:0;
+ }
+
+
+ .bgColor {
+     background-color: bisque;
+ }

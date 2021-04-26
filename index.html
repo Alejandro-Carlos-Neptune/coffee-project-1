@@ -11,81 +11,51 @@
 
 <div class="container justify-content-center align-items-center">
     <h1>Coffee!</h1>
-    <form id="Coffee-Search">
-        <label for="SearchCoffee">Coffee Name</label>
-        <input type="text" name="SearchCoffee" id="SearchCoffee" placeholder="Search Coffee">
-        <button id='search-button' type="submit">Search</button>
-    </form>
+<!--    <form id="Coffee-Search">-->
+<!--        <label for="SearchCoffee">Coffee Name</label>-->
+<!--        <input type="text" name="SearchCoffee" id="SearchCoffee" placeholder="Search Coffee">-->
+<!--        <button id='search-button' type="submit">Search</button>-->
+<!--    </form>-->
 
-    <form>
-        <!--        <label for="roast-selection"></label>-->
-        <select id="roast-selection">
-            <option>light</option>
-            <option>medium</option>
-            <option id="DarkSelection">dark</option>
-        </select>
-        <input id="submit" type="submit"/>
-    </form>
+<!--    <form>-->
+<!--        &lt;!&ndash;        <label for="roast-selection"></label>&ndash;&gt;-->
+<!--        <select id="roast-selection">-->
+<!--            <option>light</option>-->
+<!--            <option>medium</option>-->
+<!--            <option id="DarkSelection">dark</option>-->
+<!--        </select>-->
+<!--        <input id="submit" type="submit"/>-->
+<!--    </form>-->
+
+    <input type="text" id="myInput" onkeyup="myFunction()"  placeholder="Search for coffee name.." title="Type name">
+    <input type="text" id="myInput2" onkeyup="myFunction2()"  placeholder="Search for coffee roast.." title="Type name">
+
     <!-- THE CHART -->
-    <div class="row bg-success">
-        <div class="col-4 bg-warning">
-            <div class="d-flex flex-column">
-                <div class="row bg-info"><h3>ID</h3></div>
-                <div class="row"><p class="dark french">1</p></div>
-                <div class="row"><p class="dark italian">2</p></div>
-                <div class="row"><p class="dark viennese">3</p></div>
-                <div class="row"><p class="dark espresso">4</p></div>
-                <div class="row"><p class="dark european">5</p></div>
-                <div class="row"><p class="dark new-orleans">6</p></div>
-                <div class="row"><p class="dark continental">7</p></div>
-                <div class="row"><p class="dark high">8</p></div>
-                <div class="row"><p class="medium breakfast">9</p></div>
-                <div class="row"><p class="medium american">10</p></div>
-                <div class="row"><p class="medium city">11</p></div>
-                <div class="row"><p class="light cinnamon">12</p></div>
-                <div class="row"><p class="light half-city">13</p></div>
-                <div class="row"><p class="light light-city">14</p></div>
-            </div>
-        </div>
-
-        <div class="col-4">
+    <div class="row bgColor">
+        <div class="col-12">
             <div class="d-flex flex-column">
                 <div class="row bg-danger"><h3>NAME</h3></div>
-                <div class="row"><p class="dark french">FRENCH</p></div>
-                <div class="row"><p class="dark italian">ITALIAN</p></div>
-                <div class="row"><p class="dark viennese">VIENNESE</p></div>
-                <div class="row"><p class="dark espresso">ESPRESSO</p></div>
-                <div class="row"><p class="dark european">EUROPEAN</p></div>
-                <div class="row"><p class="dark new-orleans">NEW ORLEANS</p></div>
-                <div class="row"><p class="dark continental">CONTINENTAL</p></div>
-                <div class="row"><p class="dark high">HIGH</p></div>
-                <div class="row"><p class="medium breakfast">BREAKFAST</p></div>
-                <div class="row"><p class="medium american">AMERICAN</p></div>
-                <div class="row"><p class="medium city">CITY</p></div>
-                <div class="row"><p class="light cinnamon">CINNAMON</p></div>
-                <div class="row"><p class="light half-city">HALF CITY</p></div>
-                <div class="row"><p class="light light-city">LIGHT CITY</p></div>
+                <div class="row">
+                    <ul id="Coffees" class="d-flex flex-column CoffeeItems">
+                        <li class=" row "><a href="#">FRENCH | <small> Dark</small></a></li>
+                        <li><a href="#">ITALIAN  | <small> Dark</small></a></li>
+                        <li><a href="#">VIENESSE | <small> Dark</small></a></li>
+                        <li><a href="#">ESPRESSO | <small> Dark</small></a></li>
+                        <li><a href="#">EUROPEAN | <small> Dark</small></a></li>
+                        <li><a href="#">NEW ORLEANS | <small> Dark</small></a></li>
+                        <li><a href="#">CONTINENTAL | <small> Dark</small></a></li>
+                        <li><a href="#">HIGH | <small> Dark</small></a></li>
+                        <li><a href="#">BREAKFAST | <small> Medium</small></a></li>
+                        <li><a href="#">AMERICAN | <small> Medium</small></a></li>
+                        <li><a href="#">CITY | <small> Medium</small></a></li>
+                        <li><a href="#">CINNAMON  | <small> Light</small></a></li>
+                        <li><a href="#">HALF-CITY | <small> Light</small></a></li>
+                        <li><a href="#">LIGHT-CITY | <small> Light</small></a></li>
+                    </ul>
+                </div>
             </div>
         </div>
-        <div class="col-4">
-            <div class="d-flex flex-column">
-                <div class="row bg-warning"><h3>ROAST</h3></div>
-                <div class="row"><p class="dark">DARK</p></div>
-                <div class="row"><p class="dark">DARK</p></div>
-                <div class="row"><p class="dark">DARK</p></div>
-                <div class="row"><p class="dark">DARK</p></div>
-                <div class="row"><p class="dark">DARK</p></div>
-                <div class="row"><p class="dark">DARK</p></div>
-                <div class="row"><p class="dark">DARK</p></div>
-                <div class="row"><p class="dark">DARK</p></div>
-                <div class="row"><p class="medium">MEDIUM</p></div>
-                <div class="row"><p class="medium">MEDIUM</p></div>
-                <div class="row"><p class="medium">MEDIUM</p></div>
-                <div class="row"><p class="light">LIGHT</p></div>
-                <div class="row"><p class="light">LIGHT</p></div>
-                <div class="row"><p class="light">LIGHT</p></div>
-            </div>
-        </div>
+
     </div>
 </div>
 
