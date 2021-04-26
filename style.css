@@ -7,6 +7,26 @@ body {
     display: flex;
     justify-content: center;
 }
+
+.theCup{
+    margin:0;
+    padding: 0;
+}
+
+.CupSize {
+    width:250px;
+    height:250px;
+    border: 10px solid whitesmoke;
+    border-radius: 1rem;
+}
+
+.CupSide{
+    background-color: #1a1a1a;
+}
+.NameColor {
+    background-color: #1a1a1a;
+    color: whitesmoke;
+}
 .CoffeeItems {
     padding-left: 2em;
     padding-bottom: 0;
