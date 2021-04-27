@@ -21,10 +21,10 @@ body {
 }
 
 .CupSide{
-    background-color: #1a1a1a;
+    background-color: #323030;
 }
 .NameColor {
-    background-color: #1a1a1a;
+    background-color: #323030;
     color: whitesmoke;
 }
 .CoffeeItems {
@@ -42,5 +42,5 @@ body {
 
 
 .bgColor {
-    background-color: bisque;
+    background-color: #f1e0d3;
 }
