@@ -9,25 +9,17 @@
 </head>
 <body class="container justify-content-center align-items-start background-img ">
 <div class="container justify-content-center align-items-center">
-    <h1>Coffee!</h1>
-<!--    <form id="Coffee-Search">-->
-<!--        <label for="SearchCoffee">Coffee Name</label>-->
-<!--        <input type="text" name="SearchCoffee" id="SearchCoffee" placeholder="Search Coffee">-->
-<!--        <button id='search-button' type="submit">Search</button>-->
-<!--    </form>-->
-
-<!--    <form>-->
-<!--        &lt;!&ndash;        <label for="roast-selection"></label>&ndash;&gt;-->
-<!--        <select id="roast-selection">-->
-<!--            <option>light</option>-->
-<!--            <option>medium</option>-->
-<!--            <option id="DarkSelection">dark</option>-->
-<!--        </select>-->
-<!--        <input id="submit" type="submit"/>-->
-<!--    </form>-->
-
-<!--    <input type="text" id="myInput" onkeyup="myFunction()"  placeholder="Search for coffee name.." title="Type name">-->
-
+    <header class="container">
+        <div class="row">
+            <div class="col-2 align-items-center justify-content-center">
+                <img class="img-header" src="img/Unknown.jpg" alt="coffee-cup">
+            </div>
+            <div class="col-10 d-flex align-items-center justify-content-start">
+                <h1>Coffee!</h1>
+            </div>
+        </div>
+    </header>
+    <!--    <h1>Coffee!</h1>-->
 
     <!-- THE CHART -->
     <div class="row bgColor">
@@ -36,9 +28,9 @@
                 <div class="row NameColor"><h3>NAME</h3></div>
                 <div class="row">
                     <ol id="Coffees" class="d-flex flex-column align-items-start CoffeeItems">
-<!--                        <li class=" row "><a href="#">FRENCH | <small> Dark</small></a></li>-->
-                        <li><a href="#">FRENCH  | <small> Dark</small></a></li>
-                        <li><a href="#">ITALIAN  | <small> Dark</small></a></li>
+                        <!--                        <li class=" row "><a href="#">FRENCH | <small> Dark</small></a></li>-->
+                        <li><a href="#">FRENCH | <small> Dark</small></a></li>
+                        <li><a href="#">ITALIAN | <small> Dark</small></a></li>
                         <li><a href="#">VIENESSE | <small> Dark</small></a></li>
                         <li><a href="#">ESPRESSO | <small> Dark</small></a></li>
                         <li><a href="#">EUROPEAN | <small> Dark</small></a></li>
@@ -48,7 +40,7 @@
                         <li><a href="#">BREAKFAST | <small> Medium</small></a></li>
                         <li><a href="#">AMERICAN | <small> Medium</small></a></li>
                         <li><a href="#">CITY | <small> Medium</small></a></li>
-                        <li><a href="#">CINNAMON  | <small> Light</small></a></li>
+                        <li><a href="#">CINNAMON | <small> Light</small></a></li>
                         <li><a href="#">HALF-CITY | <small> Light</small></a></li>
                         <li><a href="#">LIGHT-CITY | <small> Light</small></a></li>
                     </ol>
@@ -56,16 +48,17 @@
             </div>
         </div>
         <div class=" col-6 CupSide d-flex justify-content-center align-items-center">
-                <div class="row ">
-                    <div class="col-12 theCup justify-content-center align-items-center">
-                        <div class="container theCup  d-flex justify-content-center  align-items-start ">
-                            <img class='CupSize' src="img/pexels-lood-goosen-1235717.jpg" alt="coffee cup">
-                        </div>
-                        <div class=" d-flex justify-content-center  align-items-end">
-                            <input class="myInput" type="text" id="myInput" onkeyup="myFunction()"  placeholder="Search for coffee name.." title="Type name">
-                        </div>
+            <div class="row ">
+                <div class="col-12 theCup justify-content-center align-items-center">
+                    <div class="container theCup  d-flex justify-content-center  align-items-start ">
+                        <img class='CupSize' src="img/pexels-lood-goosen-1235717.jpg" alt="coffee cup">
+                    </div>
+                    <div class=" d-flex justify-content-center  align-items-end">
+                        <input class="myInput" type="text" id="myInput" onkeyup="myFunction()"
+                               placeholder="Search for coffee name.." title="Type name">
                     </div>
                 </div>
+            </div>
         </div>
     </div>
 </div>
