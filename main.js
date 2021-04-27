@@ -140,13 +140,13 @@ myFunction();
 // document.getElementById('btn1').addEventListener('click', listener);
 //
 
-function changeInput(){
+function changeInput() {
 
-    var para = document.createElement("li");
-    var node = document.createTextNode('hello');
+    var para = document.createElement("a");
+    // var node = document.createTextNode(node);
     var str = document.getElementById('myInput2').value;
-
-    para.appendChild(node);
+    // var newString = str.toString();
+    para.innerHTML = str;
     var element = document.getElementById("Coffees");
     element.appendChild(para);
 }
