@@ -9,12 +9,13 @@
 </head>
 <body class="container justify-content-center align-items-start background-img ">
 <div class="container justify-content-center align-items-center">
-    <header class="container">
-        <div class="row">
-            <div class="col-2 align-items-center justify-content-center">
-                <img class="img-header" src="img/Unknown.jpg" alt="coffee-cup">
+    <!-- HEADING BAR -->
+    <header class="container headingSpace mb-3 align-items-center justify-content-center">
+        <div class="row align-items-center justify-content-start">
+            <div class="col-2 align-items-center justify-content-center imageBC">
+                <img class="img-header img-fluid rounded-circle" src="img/Unknown.jpg" alt="coffee-cup">
             </div>
-            <div class="col-10 d-flex align-items-center justify-content-start">
+            <div class="col-8 d-flex align-items-center justify-content-start">
                 <h1>Coffee!</h1>
             </div>
         </div>
@@ -23,26 +24,26 @@
 
     <!-- THE CHART -->
     <div class="row bgColor">
-        <div class="col-6 firstcontainer">
+        <div class="col-6 ">
             <div class="d-flex flex-column">
                 <div class="row NameColor"><h3>NAME</h3></div>
                 <div class="row">
                     <ol id="Coffees" class="d-flex flex-column align-items-start CoffeeItems">
                         <!--                        <li class=" row "><a href="#">FRENCH | <small> Dark</small></a></li>-->
-                        <li><a href="#">FRENCH | <small> Dark</small></a></li>
-                        <li><a href="#">ITALIAN | <small> Dark</small></a></li>
-                        <li><a href="#">VIENESSE | <small> Dark</small></a></li>
-                        <li><a href="#">ESPRESSO | <small> Dark</small></a></li>
-                        <li><a href="#">EUROPEAN | <small> Dark</small></a></li>
-                        <li><a href="#">NEW ORLEANS | <small> Dark</small></a></li>
-                        <li><a href="#">CONTINENTAL | <small> Dark</small></a></li>
-                        <li><a href="#">HIGH | <small> Dark</small></a></li>
-                        <li><a href="#">BREAKFAST | <small> Medium</small></a></li>
-                        <li><a href="#">AMERICAN | <small> Medium</small></a></li>
-                        <li><a href="#">CITY | <small> Medium</small></a></li>
-                        <li><a href="#">CINNAMON | <small> Light</small></a></li>
-                        <li><a href="#">HALF-CITY | <small> Light</small></a></li>
-                        <li><a href="#">LIGHT-CITY | <small> Light</small></a></li>
+                        <li><a  class='coffeeName' href="#">FRENCH | <small> Dark</small></a></li>
+                        <li><a  class='coffeeName' href="#">ITALIAN | <small> Dark</small></a></li>
+                        <li><a  class='coffeeName' href="#">VIENESSE | <small> Dark</small></a></li>
+                        <li><a  class='coffeeName' href="#">ESPRESSO | <small> Dark</small></a></li>
+                        <li><a  class='coffeeName' href="#">EUROPEAN | <small> Dark</small></a></li>
+                        <li><a  class='coffeeName' href="#">NEW ORLEANS | <small> Dark</small></a></li>
+                        <li><a  class='coffeeName' href="#">CONTINENTAL | <small> Dark</small></a></li>
+                        <li><a  class='coffeeName' href="#">HIGH | <small> Dark</small></a></li>
+                        <li><a  class='coffeeName' href="#">BREAKFAST | <small> Medium</small></a></li>
+                        <li><a  class='coffeeName' href="#">AMERICAN | <small> Medium</small></a></li>
+                        <li><a  class='coffeeName' href="#">CITY | <small> Medium</small></a></li>
+                        <li><a  class='coffeeName' href="#">CINNAMON | <small> Light</small></a></li>
+                        <li><a  class='coffeeName' href="#">HALF-CITY | <small> Light</small></a></li>
+                        <li><a  class='coffeeName' href="#">LIGHT-CITY | <small> Light</small></a></li>
                     </ol>
                 </div>
             </div>
@@ -61,6 +62,17 @@
             </div>
         </div>
     </div>
+
+    <div class="container bg-success">
+            <div class="row">
+                <div class=" d-flex justify-content-center  align-items-end">
+                    <input class="myInput2" type="text" id="myInput2"
+                           placeholder="Search for coffee name.." title="Type name">
+                    <button id="btn1" onclick="changeInput()">Click Me!</button>
+                </div>
+            </div>
+    </div>
+
 </div>
 
 

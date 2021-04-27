@@ -15,7 +15,7 @@ header {
 
 }
 .img-header {
-    border-radius: 50%;
+    /*border-radius: 50%;*/
     height: 100px;
     width: 100px;
 }
@@ -64,6 +64,11 @@ header {
     color: chocolate;
 }
 
-.firstcontainer{
-    padding:0;
+.headingSpace {
+    padding: 0 !important;
+}
+
+.imageBC {
+    background-color: #323030;
+    padding: 1em;
 }

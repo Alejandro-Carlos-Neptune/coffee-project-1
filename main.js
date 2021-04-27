@@ -107,6 +107,7 @@ function myFunction() {
     filter = input.value.toLowerCase();
     ul = document.getElementById("Coffees");
     li = ul.getElementsByTagName("li");
+
     for (i = 0; i < li.length; i++) {
         a = li[i].getElementsByTagName("a")[0];
         txtValue = a.textContent || a.innerText;
@@ -120,3 +121,42 @@ function myFunction() {
 
 
 myFunction();
+
+
+// var input2 = document.getElementById('myInput2');
+// console.log(input2);
+// //
+// function testInput2(e){
+//     alert(Input2);
+// }
+// var Input2 = document.getElementById('myInput2').addEventListener('keydown', testInput2);
+//
+//
+// var listener = function (event) {
+//     alert('You clicked the button!');
+// }
+//
+// // register the listener to handle clicks on btn1
+// document.getElementById('btn1').addEventListener('click', listener);
+//
+
+function changeInput(){
+
+    var para = document.createElement("li");
+    var node = document.createTextNode('hello');
+    var str = document.getElementById('myInput2').value;
+
+    para.appendChild(node);
+    var element = document.getElementById("Coffees");
+    element.appendChild(para);
+}
+
+var replaceText = document.getElementsByClassName('coffeeName');
+console.log(replaceText.innerHTML);
+
+
+
+
+
+
+
