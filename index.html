@@ -26,12 +26,12 @@
 <!--        <input id="submit" type="submit"/>-->
 <!--    </form>-->
 
-    <input type="text" id="myInput" onkeyup="myFunction()"  placeholder="Search for coffee name.." title="Type name">
-<!--    <input type="text" id="myInput2" onkeyup="myFunction2()"  placeholder="Search for coffee roast.." title="Type name">-->
+<!--    <input type="text" id="myInput" onkeyup="myFunction()"  placeholder="Search for coffee name.." title="Type name">-->
+
 
     <!-- THE CHART -->
     <div class="row bgColor">
-        <div class="col-6">
+        <div class="col-6 firstcontainer">
             <div class="d-flex flex-column">
                 <div class="row NameColor"><h3>NAME</h3></div>
                 <div class="row">
@@ -55,17 +55,18 @@
                 </div>
             </div>
         </div>
-        <div class="col-6 CupSide d-flex justify-content-center align-items-center">
-            <div class="row ">
-                <div class="col-12 theCup">
-                    <div class="container theCup  d-flex justify-content-center  align-items-center ">
-                        <img class='CupSize' src="img/pexels-lood-goosen-1235717.jpg" alt="coffee cup">
+        <div class=" col-6 CupSide d-flex justify-content-center align-items-center">
+                <div class="row ">
+                    <div class="col-12 theCup justify-content-center align-items-center">
+                        <div class="container theCup  d-flex justify-content-center  align-items-start ">
+                            <img class='CupSize' src="img/pexels-lood-goosen-1235717.jpg" alt="coffee cup">
+                        </div>
+                        <div class=" d-flex justify-content-center  align-items-end">
+                            <input class="myInput" type="text" id="myInput" onkeyup="myFunction()"  placeholder="Search for coffee name.." title="Type name">
+                        </div>
                     </div>
                 </div>
-            </div>
-
         </div>
-
     </div>
 </div>
 

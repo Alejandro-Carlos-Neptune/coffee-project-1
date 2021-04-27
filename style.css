@@ -9,8 +9,8 @@ body {
 }
 
 .theCup{
-    margin:0;
-    padding: 0;
+    margin-bottom:10px;
+    padding-bottom: .1em;
 }
 
 .CupSize {
@@ -22,6 +22,7 @@ body {
 
 .CupSide{
     background-color: #323030;
+    padding-top: 2em;
 }
 .NameColor {
     background-color: #323030;
@@ -43,4 +44,15 @@ body {
 
 .bgColor {
     background-color: #f1e0d3;
+}
+
+.myInput {
+    margin-top: 1em;
+    border: 5px solid whitesmoke;
+    border-radius: 2rem;
+    color: chocolate;
+}
+
+.firstcontainer{
+    padding:0;
 }
