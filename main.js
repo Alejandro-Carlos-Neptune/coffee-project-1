@@ -142,13 +142,15 @@ myFunction();
 
 function changeInput() {
 
-    var para = document.createElement("a");
+    var para = document.createElement("li");
     // var node = document.createTextNode(node);
     var str = document.getElementById('myInput2').value;
     // var newString = str.toString();
     para.innerHTML = str;
     var element = document.getElementById("Coffees");
     element.appendChild(para);
+    // var para2 = document.createElement('a');
+    // para2.innerHTML = str;
 }
 
 var replaceText = document.getElementsByClassName('coffeeName');
