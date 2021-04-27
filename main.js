@@ -43,7 +43,7 @@
 // //     tbody.innerHTML = renderCoffees(filteredCoffees);
 // // }
 //
-// // from http://www.ncausa.org/About-Coffee/Coffee-Roasts-Guide
+// from http://www.ncausa.org/About-Coffee/Coffee-Roasts-Guide
 // var coffees = [
 //     {id: 1, name: 'Light City', roast: 'light'},
 //     {id: 2, name: 'Half City', roast: 'light'},
@@ -102,15 +102,36 @@
 // var DarkSelection = document.getElementById('DarkSelection')
 
 function myFunction() {
-    var input, filter, ul, li, a, i, txtValue;
+    var input, filter, ul, li, span, i, txtValue;
     input = document.getElementById("myInput");
     filter = input.value.toLowerCase();
-    ul = document.getElementById("Coffees");
-    li = ul.getElementsByTagName("li");
+    ul = document.getElementById("Coffees");//gets the ul id
+    li = ul.getElementsByTagName("li");//use the ul element to get the tag name within it li
+
+
 
     for (i = 0; i < li.length; i++) {
-        a = li[i].getElementsByTagName("a")[0];
-        txtValue = a.textContent || a.innerText;
+        span = li[i];
+        txtValue = span.textContent || span.innerText;
+        if (txtValue.toLowerCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+        }
+    }
+}
+function myFunction2() {
+    var input, filter, ul, li, span, i, txtValue;
+    input = document.getElementById("myInput");
+    filter = input.value.toLowerCase();
+    ul = document.getElementById("Roast");//gets the ul id
+    li = ul.getElementsByTagName("li");
+
+
+
+    for (i = 0; i < li.length; i++) {
+        span = li[i];
+        txtValue = span.textContent || span.innerText;
         if (txtValue.toLowerCase().indexOf(filter) > -1) {
             li[i].style.display = "";
         } else {
@@ -120,7 +141,11 @@ function myFunction() {
 }
 
 
-myFunction();
+
+function allFunctions(){
+    myFunction();
+    myFunction2();
+}
 
 
 // var input2 = document.getElementById('myInput2');
@@ -139,24 +164,54 @@ myFunction();
 // // register the listener to handle clicks on btn1
 // document.getElementById('btn1').addEventListener('click', listener);
 //
-
+//
 function changeInput() {
 
-    var para = document.createElement("li");
+    var para = document.createElement("div");
     // var node = document.createTextNode(node);
-    var str = document.getElementById('myInput2').value;
+
+    var str = document.getElementById('myInput2');
     // var newString = str.toString();
-    para.innerHTML = str;
+    var filter = str.value.toUpperCase();
+    para.innerHTML = filter;
+    var element = document.getElementById("Coffees");
+    element.appendChild(para);
+    // var para2 = document.createElement('a');
+    // para2.innerHTML = str;
+}
+function changeInput2() {
+
+    var para = document.createElement("li");
+
+    // var node = document.createTextNode(node);
+    var str = document.getElementById('myInput3').value;
+    // var newString = str.toString();
+    para.innerText = str;
     var element = document.getElementById("Coffees");
     element.appendChild(para);
     // var para2 = document.createElement('a');
     // para2.innerHTML = str;
 }
 
-var replaceText = document.getElementsByClassName('coffeeName');
-console.log(replaceText.innerHTML);
+function allInputs(){
+    changeInput2();
+    changeInput();
+}
 
 
+//
+// function changeInput(){
+//     var para = document.createElement("span"), document.createElement();
+//     var span = para.innerHTML = str;
+//     var li = span.getElementsByTagName('li');
+//
+//     var str = document.getElementById('myInput2').value;
+//
+//     // li.innerHTML = str;
+//     var element = document.getElementById("Coffees");
+//     element.appendChild(li);
+//
+// }
 
 
 

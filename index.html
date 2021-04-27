@@ -28,23 +28,45 @@
             <div class="d-flex flex-column">
                 <div class="row NameColor"><h3>NAME</h3></div>
                 <div class="row">
-                    <ol id="Coffees" class="d-flex flex-column align-items-start CoffeeItems">
-                        <!--                        <li class=" row "><a href="#">FRENCH | <small> Dark</small></a></li>-->
-                        <li><a class='coffeeName' href="#">FRENCH | <small> Dark</small></a></li>
-                        <li><a class='coffeeName' href="#">ITALIAN | <small> Dark</small></a></li>
-                        <li><a class='coffeeName' href="#">VIENESSE | <small> Dark</small></a></li>
-                        <li><a class='coffeeName' href="#">ESPRESSO | <small> Dark</small></a></li>
-                        <li><a class='coffeeName' href="#">EUROPEAN | <small> Dark</small></a></li>
-                        <li><a class='coffeeName' href="#">NEW ORLEANS | <small> Dark</small></a></li>
-                        <li><a class='coffeeName' href="#">CONTINENTAL | <small> Dark</small></a></li>
-                        <li><a class='coffeeName' href="#">HIGH | <small> Dark</small></a></li>
-                        <li><a class='coffeeName' href="#">BREAKFAST | <small> Medium</small></a></li>
-                        <li><a class='coffeeName' href="#">AMERICAN | <small> Medium</small></a></li>
-                        <li><a class='coffeeName' href="#">CITY | <small> Medium</small></a></li>
-                        <li><a class='coffeeName' href="#">CINNAMON | <small> Light</small></a></li>
-                        <li><a class='coffeeName' href="#">HALF-CITY | <small> Light</small></a></li>
-                        <li><a class='coffeeName' href="#">LIGHT-CITY | <small> Light</small></a></li>
-                    </ol>
+                    <div class="col-12 bg-success">
+                        <ul id="Coffees" class="d-flex flex-column align-items-start CoffeeItems bg-info">
+                            <!--                        <li class=" row "><a href="#">FRENCH | <small> Dark</small></a></li>-->
+                            <li class ="row col-12 bg-warning">Dark<br>FRENCH </br></li> <!-- PON LOS NOMBRES DE LOS CAFES ADENTRO DEL BREAK PORFA? -->
+                            <li class ="row col-12 bg-warning">ITALIAN <br>Dark</br></li>
+                            <li class ="row col-12 bg-warning">VIENESSE <br>Dark</br></li>
+                            <li class ="row col-12 bg-warning">ESPRESSO <br>Dark</br></li>
+                            <li class ="row col-12 bg-warning">EUROPEAN <span>Dark</span></li>
+                            <li class ="row col-12 bg-warning">NEW ORLEANS <span>Dark</span></li>
+                            <li class ="row col-12 bg-warning">CONTINENTAL <span>Dark</span></li>
+                            <li class ="row col-12 bg-warning">HIGH<span>Dark</span> </li>
+                            <li class ="row col-12 bg-warning">BREAKFAST<span>Medium</span> </li>
+                            <li class ="row col-12 bg-warning">AMERICAN<span>Medium</span> </li>
+                            <li class ="row col-12 bg-warning">CITY<span>Medium</span> </li>
+                            <li class ="row col-12 bg-warning">CINNAMON<span>Light</span></li>
+                            <li class ="row col-12 bg-warning">HALF-CITY<span>Light</span></li>
+                            <li class ="row col-12 bg-warning">LIGHT-CITY<br>Light</br></li>
+
+
+                        </ul>
+                    </div>
+<!--                    <div class="col-6 bg-warning">-->
+<!--                        <ul id="Roast"  class="d-flex flex-column align-items-start CoffeeItems">-->
+<!--                            <small>Dark</small>-->
+<!--                            <li>Dark</li>-->
+<!--                            <li>Dark</li>-->
+<!--                            <li>Dark</li>-->
+<!--                            <li>Dark</li>-->
+<!--                            <li>Dark</li>-->
+<!--                            <li>Dark</li>-->
+<!--                            <li>Dark</li>-->
+<!--                            <small>Medium</small>-->
+<!--                            <li>Medium</li>-->
+<!--                            <li>Medium</li>-->
+<!--                            <small>Light</small>-->
+<!--                            <li>Light</li>-->
+<!--                            <li>Light</li>-->
+<!--                        </ul>-->
+<!--                    </div>-->
                 </div>
             </div>
         </div>
@@ -55,7 +77,7 @@
                         <img class='CupSize' src="img/pexels-lood-goosen-1235717.jpg" alt="coffee cup">
                     </div>
                     <div class=" d-flex justify-content-center  align-items-end">
-                        <input class="myInput" type="text" id="myInput" onkeyup="myFunction()"
+                        <input class="myInput" type="text" id="myInput" onkeyup="allFunctions()"
                                placeholder="Search for coffee name.." title="Type name">
                     </div>
                 </div>
@@ -68,7 +90,15 @@
             <div class=" d-flex justify-content-center  align-items-end">
                 <input class="myInput2" type="text" id="myInput2"
                        placeholder="Search for coffee name.." title="Type name">
-                <button id="btn1" onclick="changeInput()">Click Me!</button>
+                <form >
+                    <select  id="myInput3" name="coffee_preference">
+                        <option  value="Light">Light Roast</option>
+                        <option  value="Medium">Medium Roast</option>
+                        <option  value="Dark">Dark Blend</option>
+                    </select>
+
+                </form>
+                <button id="btn1" onclick="allInputs()">Add Coffee</button>
             </div>
         </div>
     </div>
